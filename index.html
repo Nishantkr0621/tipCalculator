@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TipCalculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tank">
+   <div class="headd1">
+  <h1 class="tip">Tip calculator</h1>
+   </div>
+
+   <div class="headd2">
+  <h4 class="tip_1">How much was your bill?</h4>
+  </div>
+
+  <div class="tip">
+  <label class="tip_2">₹</label>
+  <input class="tip_22" id="billamt" type="number" min="0" placeholder="Bill Amount">
+  </div>
+
+  <br>
+
+  <h4 class="tip_3">How was your service?</h4>
+
+  <div class="tip">
+  <select class="tip_4" id="serviceQual">
+   <option class="opn" >--Choose an Option--</option>
+   <option class="opn" value="0.3">30% - Outstanding</option>
+   <option class="opn" value="0.25">25% - Great</option>
+   <option class="opn" value="0.2">20% - Good</option>
+   <option class="opn" value="0.15">15% - It was OK</option>
+   <option class="opn" value="0.1">10% - Bad</option>
+   <option class="opn" value="0.05">5% - Terrible</option>
+  </select>
+  </div>
+
+  <h4 class="tip_5">How many people are sharing the bill?</h4>
+
+  <div class="tip_ppl">
+  <input class="ppl" id="peopleamt" type="number" min="1" placeholder="Number of People">
+  <label class="ppl_org" >people</label> <br><br>
+  </div>
+
+  <div class="tip">
+  <button class="btn" id = "calculate" onclick="total()">Calculate</button>
+  </div>
+  <br>
+
+  <div class="tip">
+  <h3 class="final" id="amount"></h3>
+  <h3 class="final" id="value"></h3>
+  <h2 class="final" id="each"></h2>
+  </div>
+
+
+  <script src="tip.js"></script>
+  </div>
+</body>
+</html>
