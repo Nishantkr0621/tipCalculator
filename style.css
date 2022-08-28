@@ -1,6 +1,7 @@
 body{
     
-    background-image: url(giphy.gif);
+   /* background-image: url(giphy.gif); */
+    background-color: #001009;
 }
 .tank{
     width: 497px;
